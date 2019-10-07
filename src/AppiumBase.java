@@ -9,7 +9,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class AppiumBase {
 	
 public static AndroidDriver<AndroidElement> capabilities() throws MalformedURLException {
-AndroidDriver<AndroidElement>  driver;
+AndroidDriver<MobileElement>  driver;
 File appDir=new File("src");
 File app=new File (appDir, "ApiDemos-debug.apk");
 DesiredCapabilities capabilities = new DesiredCapabilities();
